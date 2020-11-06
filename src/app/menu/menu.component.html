@@ -1,0 +1,32 @@
+<header class="d">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div><a routerLink="/" class="navbar-brand">Whatever</a></div>
+
+        <ul class="navbar-nav">
+            <li class="nav-link">
+                <a *ngIf="this.basicAuthenticationService.isUserLoggedIn()" routerLink="/welcome/padua" class="text-muted">Home</a>
+            </li>
+            <li class="nav-link">
+                <a *ngIf="this.basicAuthenticationService.isUserLoggedIn()" routerLink="/todos" class="text-muted">Todo's</a>
+            </li>
+            <li class="nav-link">
+                <a *ngIf="this.basicAuthenticationService.isUserLoggedIn()" routerLink="/about-us" class="text-muted">About us</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li class="nav-link">
+                <a *ngIf="!this.basicAuthenticationService.isUserLoggedIn()" routerLink="/login" class="text-muted"> Login </a>
+            </li>
+
+            <li class="nav-link">
+                <a *ngIf="this.basicAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="text-muted"> Logout </a>
+            </li>
+
+        </ul>
+
+
+
+    </nav>    
+
+</header>
