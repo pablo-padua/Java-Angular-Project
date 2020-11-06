@@ -1,5 +1,7 @@
 # Todo's site sample
 
+![todos examples](https://i.ibb.co/6wqLhXm/Captura-de-tela-de-2020-11-06-10-52-34.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.12.
 
 ## Development server
